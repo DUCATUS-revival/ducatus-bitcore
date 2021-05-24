@@ -1,28 +1,33 @@
 const RpcClasses = {
-  BTC: require('./btc/BtcRpc'),
-  BCH: require('./bch/BchRpc'),
-  ETH: require('./eth/EthRpc'),
-  DUCX: require('./ducx/DucXRpc'),
-  XRP: require('./xrp/XrpRpc')
+  BTC: require("./btc/BtcRpc"),
+  BCH: require("./bch/BchRpc"),
+  ETH: require("./eth/EthRpc"),
+  DUCX: require("./ducx/DucXRpc"),
+  BNB: require("./bnb/BnbRpc"),
+  XRP: require("./xrp/XrpRpc")
 };
 
 const TokenClasses = {
   ETH: {
-    native: require('./eth/EthRpc'),
-    ERC20: require('./erc20/Erc20Rpc')
+    native: require("./eth/EthRpc"),
+    ERC20: require("./erc20/Erc20Rpc")
+  },
+  BNB: {
+    native: require("./bnb/BnbRpc"),
+    ERC20: require("./erc20/Erc20Rpc")
   },
   DUCX: {
-    native: require('./ducx/DucXRpc'),
-    ERC20: require('./erc20/Erc20Rpc')
+    native: require("./ducx/DucXRpc"),
+    ERC20: require("./erc20/Erc20Rpc")
   },
   BTC: {
-    native: require('./btc/BtcRpc')
+    native: require("./btc/BtcRpc")
   },
   BCH: {
-    native: require('./bch/BchRpc')
+    native: require("./bch/BchRpc")
   },
   XRP: {
-    native: require('./xrp/XrpRpc')
+    native: require("./xrp/XrpRpc")
   }
 };
 
@@ -30,7 +35,7 @@ class CryptoRpcProvider {
   constructor(config) {
     this.chain = config.chain;
     if (!RpcClasses[this.chain]) {
-      throw new Error('Invalid chain specified');
+      throw new Error("Invalid chain specified");
     }
     this.config = Object.assign({}, config, {
       host: config.host,
