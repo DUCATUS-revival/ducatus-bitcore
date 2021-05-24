@@ -1,10 +1,10 @@
 import { BchValidation } from './bch';
+import { BnbValidation } from './bnb';
 import { BtcValidation } from './btc';
 import { DucValidation } from './duc';
 import { DucXValidation } from './ducx';
 import { EthValidation } from './eth';
 import { XrpValidation } from './xrp';
-import { BnbValidation } from './bnb';
 
 export interface IValidation {
   validateAddress(network: string, address: string): boolean;

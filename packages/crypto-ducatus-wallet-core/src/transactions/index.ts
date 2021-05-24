@@ -1,4 +1,5 @@
 import { BCHTxProvider } from './bch';
+import { BNBTxProvider } from './bnb';
 import { BTCTxProvider } from './btc';
 import { DRC20TxProvider } from './drc20';
 import { DUCTxProvider } from './duc';
@@ -7,7 +8,6 @@ import { ERC20TxProvider } from './erc20';
 import { ERC721TxProvider } from './erc721';
 import { ETHTxProvider } from './eth';
 import { XRPTxProvider } from './xrp';
-import { BNBTxProvider } from './bnb';
 
 const providers = {
   BTC: new BTCTxProvider(),

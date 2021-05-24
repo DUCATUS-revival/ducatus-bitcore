@@ -1,11 +1,11 @@
 import { BchDeriver } from './bch';
+import { BnbDeriver } from './bnb';
 import { BtcDeriver } from './btc';
 import { DucDeriver } from './duc';
 import { DucXDeriver } from './ducx';
 import { EthDeriver } from './eth';
 import { Paths } from './paths';
 import { XrpDeriver } from './xrp';
-import { BnbDeriver } from './bnb';
 
 export interface Key {
   address: string;
