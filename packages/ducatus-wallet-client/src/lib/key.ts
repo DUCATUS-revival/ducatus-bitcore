@@ -285,6 +285,8 @@ export class Key {
       coinCode = '60';
     } else if (opts.coin == 'xrp') {
       coinCode = '144';
+    } else if (opts.coin == 'bnb') {
+      coinCode = '1160';
     } else if (opts.coin == 'ducx') {
       coinCode = '1060';
     } else {

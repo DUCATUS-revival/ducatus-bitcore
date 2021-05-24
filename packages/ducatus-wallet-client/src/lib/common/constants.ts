@@ -65,6 +65,17 @@ export const Constants = {
         minDecimals: 2
       }
     },
+    bnb: {
+      toSatoshis: 1e18,
+      full: {
+        maxDecimals: 8,
+        minDecimals: 8
+      },
+      short: {
+        maxDecimals: 6,
+        minDecimals: 2
+      }
+    },
     xrp: {
       toSatoshis: 1e6,
       full: {
@@ -219,6 +230,7 @@ export const Constants = {
     'gusd',
     'duc',
     'ducx',
+    'bnb',
     'jamasy',
     'nuyasa',
     'sunoba',

@@ -17,7 +17,8 @@ var Bitcore_ = {
   eth: Bitcore,
   xrp: Bitcore,
   duc: DucatuscoreLib,
-  ducx: Bitcore
+  ducx: Bitcore,
+  bnb: Bitcore
 };
 var PrivateKey = Bitcore.PrivateKey;
 var PublicKey = Bitcore.PublicKey;
@@ -30,6 +31,9 @@ export class Utils {
     let normalizedChain = coin.toUpperCase();
     if (Constants.ERC20.includes(coin)) {
       normalizedChain = 'ETH';
+    }
+    if (Constants.ERC20.includes(coin)) {
+      normalizedChain = 'BNB';
     }
     if (Constants.DRC20.includes(coin)) {
       normalizedChain = 'DUCX';
