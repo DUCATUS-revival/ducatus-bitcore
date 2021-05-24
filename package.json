@@ -72,6 +72,7 @@
   "dependencies": {
     "lerna": "^3.20.2"
   },
+  "name": "root",
   "husky": {
     "hooks": {
       "pre-commit": "npm run precommit"
