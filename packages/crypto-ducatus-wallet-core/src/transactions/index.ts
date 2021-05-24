@@ -7,6 +7,7 @@ import { ERC20TxProvider } from './erc20';
 import { ERC721TxProvider } from './erc721';
 import { ETHTxProvider } from './eth';
 import { XRPTxProvider } from './xrp';
+import { BNBTxProvider } from './bnb';
 
 const providers = {
   BTC: new BTCTxProvider(),
@@ -17,7 +18,8 @@ const providers = {
   ERC20: new ERC20TxProvider(),
   DRC20: new DRC20TxProvider(),
   ERC721: new ERC721TxProvider(),
-  XRP: new XRPTxProvider()
+  XRP: new XRPTxProvider(),
+  BNB: new BNBTxProvider()
 };
 
 export class TransactionsProxy {
