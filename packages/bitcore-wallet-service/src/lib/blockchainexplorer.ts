@@ -33,6 +33,10 @@ const PROVIDERS = {
     ducx: {
       livenet: 'https://ducapi.rocknblock.io',
       testnet: 'https://ducapi.rocknblock.io'
+    },
+    bnb: {
+      livenet: 'https://bsc-dataseed.binance.org/',
+      testnet: 'https://bsc-dataseed.binance.org/'
     }
   }
 };
